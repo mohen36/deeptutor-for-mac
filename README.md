@@ -17,12 +17,15 @@ xcode-select --install
 
 ## 2. 一键构建
 
-将下载的 ZIP 解压到「下载」文件夹，然后：
+推荐从 GitHub 克隆源码：
 
 ```bash
-cd ~/Downloads/DeepTutor-Swift-for-Mac-v1.0.1
+git clone https://github.com/mohen36/deeptutor-for-mac.git
+cd deeptutor-for-mac
 zsh build.command
 ```
+
+如果使用此前下载的 ZIP，则解压后进入包含 `build.command` 的目录，再执行 `zsh build.command`。
 
 构建完成后自动打开 `dist`，其中有新生成的 `DeepTutor for Mac Fixed.app`。将**这个新版**拖入「应用程序」文件夹。旧版的 `DeepTutor for Mac.app` 是之前编译失败遗留的空应用，不要使用。启动前应确保没有旧版本 DeepTutor 占用 `3782`、`8001` 端口。
 
